@@ -18,14 +18,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/logo.png"
             alt="KV Launch"
-            width={140}
-            height={40}
-            className="h-10 w-auto"
+            width={280}
+            height={80}
+            className="h-20 w-auto"
           />
         </Link>
 
