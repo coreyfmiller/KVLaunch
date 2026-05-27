@@ -17,7 +17,7 @@ const projects = [
     category: "Kid-Run Plant Nursery",
     description:
       "A backyard nursery run by three siblings growing heirloom tomatoes, herbs, peppers, and sunflowers for weekend pickup in Quispamsis.",
-    image: "/sunriseseedlings.jpg",
+    image: "/sunriseseedlings.png",
     url: "https://sunriseseedlings.com",
   },
   {
