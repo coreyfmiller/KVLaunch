@@ -10,6 +10,7 @@ const navLinks = [
   { href: "#how-it-works", label: "How It Works" },
   { href: "#portfolio", label: "Our Work" },
   { href: "#resources", label: "Resources" },
+  { href: "#funding", label: "Funding" },
   { href: "#faq", label: "FAQ" },
 ]
 
@@ -18,19 +19,22 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <Image
-            src="/Logo.png"
-            alt="KV Launch"
-            width={560}
-            height={160}
-            className="h-28 w-auto"
-          />
-        </Link>
+      <div className="container mx-auto flex h-32 items-center justify-between px-4 md:px-6">
+        {/* Logo — takes up equal space on the left */}
+        <div className="flex flex-1 items-center">
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/Logo.png"
+              alt="KV Launch"
+              width={560}
+              height={160}
+              className="h-24 w-auto"
+            />
+          </Link>
+        </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-6 md:flex">
+        {/* Desktop Navigation — centered */}
+        <nav className="hidden items-center justify-center gap-6 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -42,7 +46,8 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex">
+        {/* CTA — takes up equal space on the right */}
+        <div className="hidden flex-1 items-center justify-end lg:flex">
           <Button asChild>
             <Link href="#apply">Apply Now</Link>
           </Button>
@@ -50,7 +55,7 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -64,7 +69,7 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="border-t border-border/40 bg-background md:hidden">
+        <div className="border-t border-border/40 bg-background lg:hidden">
           <nav className="container mx-auto flex flex-col gap-4 px-4 py-4">
             {navLinks.map((link) => (
               <Link

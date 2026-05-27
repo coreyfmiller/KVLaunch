@@ -46,6 +46,31 @@ const faqs = [
     answer:
       "We'll show you how to make basic updates yourself. For bigger changes, just reach out and we'll help.",
   },
+  {
+    question: "Can I start a business as a teenager?",
+    answer:
+      "Yes. There's no minimum age to run a business in New Brunswick. You can register a sole proprietorship, open a business bank account (some banks require a parent to co-sign if you're under 18), and start earning money. Plenty of teens in KV already do — lawn care, tutoring, baking, social media management, you name it.",
+  },
+  {
+    question: "Do I need to register my business?",
+    answer:
+      "If you're operating under any name other than your legal name, yes — you need to register with Service New Brunswick (~$60). If you're just freelancing under your own name, you technically don't need to, but registering looks more professional and protects your business name.",
+  },
+  {
+    question: "When do I need to charge HST?",
+    answer:
+      "Not until you make more than $30,000 in revenue in a 12-month period. Below that, you're a 'small supplier' and HST registration is optional. Once you cross $30K, you have 29 days to register with the CRA.",
+  },
+  {
+    question: "What's the cheapest way to accept payments?",
+    answer:
+      "E-transfer is free. Square gives you a free card reader (they take 2.65% per tap). Stripe works for online payments (2.9% + 30¢). For most young founders starting out, e-transfer + Square covers everything.",
+  },
+  {
+    question: "What's the difference between a sole proprietorship and incorporating?",
+    answer:
+      "Sole proprietorship: simple, cheap (~$60), you and the business are the same legal entity. Corporation: more complex, costs ~$400+, the business is its own legal entity (protects your personal assets). Start as a sole prop. Incorporate later when you're making real money or need liability protection.",
+  },
 ]
 
 export function FAQ() {
