@@ -23,9 +23,9 @@ export function Header() {
           <Image
             src="/Logo.png"
             alt="KV Launch"
-            width={280}
-            height={80}
-            className="h-14 w-auto"
+            width={560}
+            height={160}
+            className="h-28 w-auto"
           />
         </Link>
 
