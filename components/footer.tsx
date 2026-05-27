@@ -17,7 +17,7 @@ export function Footer() {
               className="h-9 w-auto"
             />
             <p className="text-sm text-muted-foreground">
-              Free websites and resources for young entrepreneurs in
+              Free websites and resources for entrepreneurs aged 20 and under in
               Quispamsis & Rothesay.
             </p>
           </div>

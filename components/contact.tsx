@@ -57,6 +57,7 @@ export function Contact() {
             <p className="text-lg text-muted-foreground">
               Tell us about you and your business. No pressure — even if
               you&apos;re just getting started, we want to hear from you.
+              Open to entrepreneurs aged 20 and under in the KV area.
             </p>
           </div>
 
