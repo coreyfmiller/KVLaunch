@@ -1,43 +1,32 @@
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 
 const projects = [
   {
-    name: "KV Coffee Co.",
-    category: "Food & Beverage",
-    description: "Local roastery website with online menu and location info.",
-    url: "#",
+    name: "Clean Cut Crew",
+    category: "Lawn & Yard Services",
+    description:
+      "Professional lawn mowing and yard services run by Ryder, Aiden & Jaxon. Serving Quispamsis, Rothesay, Hampton, and Saint John.",
+    image: "/cleancutcrew.jpg",
+    url: "https://cleancutcrew.ca",
   },
   {
-    name: "Valley Cuts",
-    category: "Services",
-    description: "Barbershop site with booking integration and pricing.",
-    url: "#",
+    name: "Sunrise Seedlings",
+    category: "Kid-Run Plant Nursery",
+    description:
+      "A backyard nursery run by three siblings growing heirloom tomatoes, herbs, peppers, and sunflowers for weekend pickup in Quispamsis.",
+    image: "/sunriseseedlings.jpg",
+    url: "https://sunriseseedlings.com",
   },
   {
-    name: "Rothesay Tutoring",
-    category: "Education",
-    description: "Tutoring service with subject listings and contact form.",
-    url: "#",
-  },
-  {
-    name: "KV Lawn Care",
-    category: "Services",
-    description: "Landscaping business with service areas and quote requests.",
-    url: "#",
-  },
-  {
-    name: "Quispamsis Candles",
-    category: "Retail",
-    description: "Handmade candle shop with product gallery and ordering.",
-    url: "#",
-  },
-  {
-    name: "Valley Pet Sitting",
-    category: "Services",
-    description: "Pet care service with booking calendar and testimonials.",
-    url: "#",
+    name: "KV Adventure Club",
+    category: "Kids Subscription Service",
+    description:
+      "A monthly snail-mail subscription packed with screen-free missions, scavenger hunts, and local discoveries for kids in the Kennebecasis Valley.",
+    image: "/kvadventureclub.jpg",
+    url: "https://kvadventureclub.com",
   },
 ]
 
@@ -48,7 +37,7 @@ export function Portfolio() {
         {/* Section Header */}
         <div className="mx-auto mb-12 max-w-2xl text-center md:mb-16">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Sites We&apos;ve Built
+            Some of the Sites We&apos;ve Built
           </h2>
           <p className="text-lg text-muted-foreground">
             Real websites for real young founders in the KV area. Each one
@@ -63,8 +52,14 @@ export function Portfolio() {
               key={project.name}
               className="group overflow-hidden transition-all hover:shadow-lg"
             >
-              {/* Placeholder for screenshot */}
-              <div className="aspect-video w-full bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10" />
+              <div className="relative aspect-video w-full overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={`${project.name} website screenshot`}
+                  fill
+                  className="object-cover transition-transform group-hover:scale-105"
+                />
+              </div>
               <CardContent className="p-6">
                 <div className="flex items-start justify-between">
                   <div>
@@ -80,6 +75,8 @@ export function Portfolio() {
                   </div>
                   <Link
                     href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="shrink-0 rounded-full p-2 transition-colors hover:bg-muted"
                     aria-label={`Visit ${project.name} website`}
                   >
