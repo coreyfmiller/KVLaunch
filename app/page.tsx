@@ -8,7 +8,6 @@ import { Resources } from "@/components/resources"
 import { Funding } from "@/components/funding"
 import { FreeHelp } from "@/components/free-help"
 import { FAQ } from "@/components/faq"
-import { EmailSignup } from "@/components/email-signup"
 import { About } from "@/components/about"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
@@ -27,7 +26,6 @@ export default function Home() {
         <Funding />
         <FreeHelp />
         <FAQ />
-        <EmailSignup />
         <About />
         <Contact />
       </main>
