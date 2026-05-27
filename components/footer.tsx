@@ -108,7 +108,16 @@ export function Footer() {
               © {new Date().getFullYear()} KV Launch. All rights reserved.
             </p>
             <p className="text-sm text-muted-foreground">
-              Built with ❤️ in the Kennebecasis Valley
+              A{" "}
+              <a
+                href="https://www.fundylogic.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-foreground hover:underline"
+              >
+                FundyLogic
+              </a>
+              {" "}project
             </p>
           </div>
         </div>
