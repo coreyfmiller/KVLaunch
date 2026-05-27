@@ -52,16 +52,16 @@ export function Hero() {
           {/* Stats */}
           <div className="mt-16 grid grid-cols-3 gap-8 border-t border-border pt-8">
             <div>
-              <p className="text-3xl font-bold text-foreground md:text-4xl">50+</p>
-              <p className="text-sm text-muted-foreground">Local Businesses</p>
+              <p className="text-3xl font-bold text-foreground md:text-4xl">10</p>
+              <p className="text-sm text-muted-foreground">Businesses Launched</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-foreground md:text-4xl">Free</p>
-              <p className="text-sm text-muted-foreground">Core Services</p>
+              <p className="text-3xl font-bold text-foreground md:text-4xl">100%</p>
+              <p className="text-sm text-muted-foreground">Free</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-foreground md:text-4xl">KV</p>
-              <p className="text-sm text-muted-foreground">Community Focus</p>
+              <p className="text-sm text-muted-foreground">Quispamsis & Rothesay</p>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
 import { BusinessDirectory } from "@/components/business-directory"
 import { Resources } from "@/components/resources"
+import { EmailSignup } from "@/components/email-signup"
 import { About } from "@/components/about"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
@@ -16,6 +17,7 @@ export default function Home() {
         <Services />
         <BusinessDirectory />
         <Resources />
+        <EmailSignup />
         <About />
         <Contact />
       </main>

@@ -33,22 +33,23 @@ export function About() {
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                KV Launch was created to support and empower young entrepreneurs
-                in the Quispamsis and Rothesay area. We understand that starting
-                a business can be challenging, especially when you&apos;re just
-                getting started.
+                We started KV Launch because we know what it&apos;s like to have
+                a business idea and no idea where to begin. No connections, no
+                budget, no clue if it&apos;s even possible.
               </p>
               <p>
-                Our mission is simple: provide the resources, connections, and
-                guidance that young business owners need to succeed right here
-                in the Kennebecasis Valley. From free business planning
-                assistance to networking events and mentorship programs, we&apos;re
-                here to help you launch and grow.
+                Turns out — it is. And it&apos;s a lot easier when someone shows
+                you the ropes.
               </p>
               <p>
-                Whether you have a business idea you want to explore or you&apos;re
-                ready to take the next step, KV Launch is your partner in
-                building something great in our community.
+                That&apos;s what we do. We help young people in Quispamsis and
+                Rothesay turn their ideas into real businesses. Free planning
+                help, introductions to people who&apos;ve done it before, and a
+                community that actually gets it.
+              </p>
+              <p className="font-medium text-foreground">
+                You don&apos;t need to have it all figured out. You just need to
+                start.
               </p>
             </div>
           </div>
