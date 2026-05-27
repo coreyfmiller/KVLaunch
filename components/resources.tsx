@@ -75,7 +75,39 @@ export function Resources() {
 
         {/* Resource Categories */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {resourceCategories.map((category) => (
+          {resourceCategories.slice(0, 3).map((category) => (
+            <Card key={category.title} className="flex flex-col">
+              <CardHeader>
+                <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
+                  <category.icon className="h-6 w-6" />
+                </div>
+                <CardTitle className="text-lg">{category.title}</CardTitle>
+                <CardDescription>{category.description}</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <ul className="space-y-2">
+                  {category.links.map((link) => (
+                    <li key={link.name}>
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
+                      >
+                        <ExternalLink className="h-3 w-3 shrink-0" />
+                        {link.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Bottom row — centered */}
+        <div className="mt-6 grid gap-6 md:grid-cols-2 md:mx-auto md:max-w-4xl lg:max-w-4xl">
+          {resourceCategories.slice(3).map((category) => (
             <Card key={category.title} className="flex flex-col">
               <CardHeader>
                 <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
