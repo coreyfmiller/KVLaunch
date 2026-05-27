@@ -46,18 +46,18 @@ export function Portfolio() {
         </div>
 
         {/* Project Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <Card
               key={project.name}
               className="group overflow-hidden transition-all hover:shadow-lg"
             >
-              <div className="relative aspect-video w-full overflow-hidden">
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src={project.image}
                   alt={`${project.name} website screenshot`}
                   fill
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover object-top transition-transform group-hover:scale-105"
                 />
               </div>
               <CardContent className="p-6">
