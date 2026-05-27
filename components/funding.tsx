@@ -60,7 +60,7 @@ const fundingPrograms = [
       "Annual award for Atlantic Canadian university business students who demonstrate entrepreneurial spirit. Eight winners each year across Atlantic Canada.",
     amount: "$45,000",
     eligibility: "Atlantic Canadian university students",
-    url: "https://sobey.com/en/foundation/frank-h-sobey-award/",
+    url: "https://www.frankhsobeyawards.com/",
     tags: ["Award", "University", "Atlantic Canada"],
   },
 ]

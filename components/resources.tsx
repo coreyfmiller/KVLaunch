@@ -8,8 +8,8 @@ const resourceCategories = [
     description: "Free templates to help you think through your idea.",
     links: [
       { name: "One-Page Business Plan (Google Doc)", url: "https://docs.google.com/document/d/1PbFAGJmMDl0Mzl1xGRXMfEzpNfMhLfYnHbsQiYoEmQ/template/preview" },
-      { name: "Canva Business Plan Templates", url: "https://www.canva.com/templates/s/business-plan/" },
-      { name: "LivePlan Free Sample Plans", url: "https://www.liveplan.com/sample-business-plans" },
+      { name: "Canva Business Plan Templates", url: "https://www.canva.com/documents/templates/small-business-plan/" },
+      { name: "Bplans Free Sample Plans", url: "https://www.bplans.com/" },
     ],
   },
   {
@@ -17,10 +17,9 @@ const resourceCategories = [
     title: "Funding & Grants",
     description: "Money available for young entrepreneurs in New Brunswick.",
     links: [
-      { name: "SEED (Student Entrepreneur Program)", url: "https://www2.gnb.ca/content/gnb/en/services/services_renderer.10849.SEED_-_Self-Employment_Benefit.html" },
+      { name: "SEED (Student Entrepreneur Program)", url: "https://www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour/Skills/content/FinancialSupport/SEED.html" },
       { name: "Futurpreneur Canada", url: "https://www.futurpreneur.ca/" },
-      { name: "CBDC Fundy (Loans & Support)", url: "https://www.cbdc.ca/en/cbdc-westmorland-albert" },
-      { name: "NB Student Venture Capital", url: "https://www2.gnb.ca/content/gnb/en/departments/petl/people/content/EmploymentDevelopment/StudentVentureCapital.html" },
+      { name: "CBDC (Loans & Support)", url: "https://www.cbdc.ca/" },
     ],
   },
   {
@@ -28,9 +27,9 @@ const resourceCategories = [
     title: "Free Courses",
     description: "Learn marketing, finance, and business basics for free.",
     links: [
-      { name: "Google Digital Garage", url: "https://learndigital.withgoogle.com/digitalgarage" },
+      { name: "Google Career Certificates (Free)", url: "https://grow.google/certificates" },
       { name: "HubSpot Academy (Marketing)", url: "https://academy.hubspot.com/" },
-      { name: "Coursera - How to Start a Startup", url: "https://www.coursera.org/learn/startup" },
+      { name: "Coursera - Design Thinking & Startup", url: "https://www.coursera.org/learn/startup101" },
       { name: "Khan Academy - Entrepreneurship", url: "https://www.khanacademy.org/college-careers-more/entrepreneurship2" },
     ],
   },

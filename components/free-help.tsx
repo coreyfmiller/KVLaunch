@@ -19,7 +19,7 @@ const helpServices = [
     description:
       "Co-working space and startup incubator. They offer mentorship, programs, events, and a community of other founders. If you're building something tech-related or scalable, this is your spot.",
     location: "50 Crowther Lane, Fredericton, NB",
-    url: "http://planethatch.com/",
+    url: "https://planethatch.com/",
     highlight: false,
   },
   {
