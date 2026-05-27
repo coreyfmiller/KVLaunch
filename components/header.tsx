@@ -21,7 +21,7 @@ export function Header() {
       <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/images/logo.png"
+            src="/Logo.png"
             alt="KV Launch"
             width={280}
             height={80}
