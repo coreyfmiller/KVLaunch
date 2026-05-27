@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Mail, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -10,15 +10,15 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Image
-              src="/images/logo.png"
+              src="/Logo.png"
               alt="KV Launch"
               width={120}
               height={35}
               className="h-9 w-auto"
             />
             <p className="text-sm text-muted-foreground">
-              Supporting young entrepreneurs in Quispamsis & Rothesay with local
-              resources, mentorship, and community connections.
+              Free websites and resources for young entrepreneurs in
+              Quispamsis & Rothesay.
             </p>
           </div>
 
@@ -27,28 +27,28 @@ export function Footer() {
             <h3 className="font-semibold text-foreground">Quick Links</h3>
             <nav className="flex flex-col gap-2">
               <Link
+                href="#how-it-works"
+                className="text-sm text-muted-foreground hover:text-foreground"
+              >
+                How It Works
+              </Link>
+              <Link
                 href="#services"
                 className="text-sm text-muted-foreground hover:text-foreground"
               >
-                Our Services
+                What You Get
               </Link>
               <Link
-                href="#directory"
+                href="#portfolio"
                 className="text-sm text-muted-foreground hover:text-foreground"
               >
-                Business Directory
+                Our Work
               </Link>
               <Link
-                href="#resources"
+                href="#apply"
                 className="text-sm text-muted-foreground hover:text-foreground"
               >
-                Resources
-              </Link>
-              <Link
-                href="#about"
-                className="text-sm text-muted-foreground hover:text-foreground"
-              >
-                About Us
+                Apply
               </Link>
             </nav>
           </div>
@@ -58,35 +58,35 @@ export function Footer() {
             <h3 className="font-semibold text-foreground">Resources</h3>
             <nav className="flex flex-col gap-2">
               <Link
-                href="#"
-                className="text-sm text-muted-foreground hover:text-foreground"
-              >
-                Getting Started Guide
-              </Link>
-              <Link
-                href="#"
+                href="#resources"
                 className="text-sm text-muted-foreground hover:text-foreground"
               >
                 Business Templates
               </Link>
               <Link
-                href="#"
+                href="#resources"
                 className="text-sm text-muted-foreground hover:text-foreground"
               >
-                Funding Opportunities
+                Free Courses
               </Link>
               <Link
-                href="#"
+                href="#resources"
                 className="text-sm text-muted-foreground hover:text-foreground"
               >
-                Events Calendar
+                Funding & Grants
+              </Link>
+              <Link
+                href="#faq"
+                className="text-sm text-muted-foreground hover:text-foreground"
+              >
+                FAQ
               </Link>
             </nav>
           </div>
 
           {/* Contact */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Contact Us</h3>
+            <h3 className="font-semibold text-foreground">Get in Touch</h3>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 shrink-0" />
@@ -98,12 +98,6 @@ export function Footer() {
                   hello@kvlaunch.ca
                 </a>
               </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Phone className="h-4 w-4 shrink-0" />
-                <a href="tel:+15065551234" className="hover:text-foreground">
-                  (506) 555-1234
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -111,22 +105,11 @@ export function Footer() {
         <div className="mt-12 border-t border-border pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-muted-foreground">
-              {new Date().getFullYear()} KV Launch. All rights reserved.
+              © {new Date().getFullYear()} KV Launch. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <Link
-                href="#"
-                className="text-sm text-muted-foreground hover:text-foreground"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="#"
-                className="text-sm text-muted-foreground hover:text-foreground"
-              >
-                Terms of Service
-              </Link>
-            </div>
+            <p className="text-sm text-muted-foreground">
+              Built with ❤️ in the Kennebecasis Valley
+            </p>
           </div>
         </div>
       </div>

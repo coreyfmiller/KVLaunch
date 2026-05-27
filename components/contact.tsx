@@ -11,41 +11,63 @@ export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
-    message: "",
+    businessName: "",
+    whatYouDo: "",
+    social: "",
+    details: "",
   })
+  const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("[v0] Form submitted:", formData)
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" })
+    // TODO: Wire up to email service or form backend (Formspree, Netlify Forms, etc.)
+    console.log("Application submitted:", formData)
+    setSubmitted(true)
+  }
+
+  if (submitted) {
+    return (
+      <section id="apply" className="bg-muted/30 py-20 md:py-28">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mx-auto max-w-2xl text-center">
+            <div className="rounded-2xl border border-border bg-background p-12">
+              <h2 className="mb-4 text-3xl font-bold text-foreground">
+                Application received! 🎉
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                We&apos;ll review your info and get back to you within a few days.
+                Keep an eye on your inbox.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
   }
 
   return (
-    <section id="contact" className="bg-background py-20 md:py-28">
+    <section id="apply" className="bg-muted/30 py-20 md:py-28">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-2xl">
           {/* Section Header */}
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Get in Touch
+              Apply for a Free Website
             </h2>
             <p className="text-lg text-muted-foreground">
-              Have questions or ready to get started? Reach out and we&apos;ll
-              connect you with the right resources.
+              Tell us about you and your business. No pressure — even if
+              you&apos;re just getting started, we want to hear from you.
             </p>
           </div>
 
-          {/* Contact Form */}
+          {/* Application Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
+                <Label htmlFor="name">Your Name</Label>
                 <Input
                   id="name"
-                  placeholder="Your name"
+                  placeholder="First and last name"
                   value={formData.name}
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
@@ -69,34 +91,61 @@ export function Contact() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="subject">Subject</Label>
+              <Label htmlFor="businessName">Business Name</Label>
               <Input
-                id="subject"
-                placeholder="How can we help?"
-                value={formData.subject}
+                id="businessName"
+                placeholder="What's your business called? (or what you're thinking of calling it)"
+                value={formData.businessName}
                 onChange={(e) =>
-                  setFormData({ ...formData, subject: e.target.value })
+                  setFormData({ ...formData, businessName: e.target.value })
                 }
                 required
               />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="message">Message</Label>
+              <Label htmlFor="whatYouDo">What do you do?</Label>
               <Textarea
-                id="message"
-                placeholder="Tell us about yourself and your business idea..."
-                rows={5}
-                value={formData.message}
+                id="whatYouDo"
+                placeholder="In a sentence or two — what's your business? Who are your customers?"
+                rows={3}
+                value={formData.whatYouDo}
                 onChange={(e) =>
-                  setFormData({ ...formData, message: e.target.value })
+                  setFormData({ ...formData, whatYouDo: e.target.value })
                 }
                 required
               />
             </div>
 
+            <div className="space-y-2">
+              <Label htmlFor="social">Instagram or Social Link (optional)</Label>
+              <Input
+                id="social"
+                placeholder="@yourbusiness or a link"
+                value={formData.social}
+                onChange={(e) =>
+                  setFormData({ ...formData, social: e.target.value })
+                }
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="details">
+                Anything else we should know?
+              </Label>
+              <Textarea
+                id="details"
+                placeholder="What do you want from a website? Any inspiration or ideas? Totally optional."
+                rows={4}
+                value={formData.details}
+                onChange={(e) =>
+                  setFormData({ ...formData, details: e.target.value })
+                }
+              />
+            </div>
+
             <Button type="submit" size="lg" className="w-full">
-              Send Message
+              Submit Application
               <Send className="ml-2 h-4 w-4" />
             </Button>
           </form>

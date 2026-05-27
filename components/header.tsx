@@ -7,10 +7,10 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#directory", label: "Business Directory" },
+  { href: "#how-it-works", label: "How It Works" },
+  { href: "#portfolio", label: "Our Work" },
   { href: "#resources", label: "Resources" },
-  { href: "#about", label: "About" },
+  { href: "#faq", label: "FAQ" },
 ]
 
 export function Header() {
@@ -18,14 +18,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/Logo.png"
             alt="KV Launch"
             width={280}
             height={80}
-            className="h-20 w-auto"
+            className="h-14 w-auto"
           />
         </Link>
 
@@ -44,7 +44,7 @@ export function Header() {
 
         <div className="hidden md:flex">
           <Button asChild>
-            <Link href="#contact">Get Started</Link>
+            <Link href="#apply">Apply Now</Link>
           </Button>
         </div>
 
@@ -77,8 +77,8 @@ export function Header() {
               </Link>
             ))}
             <Button asChild className="w-full">
-              <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>
-                Get Started
+              <Link href="#apply" onClick={() => setMobileMenuOpen(false)}>
+                Apply Now
               </Link>
             </Button>
           </nav>

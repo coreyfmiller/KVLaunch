@@ -3,21 +3,21 @@ import { Target, Heart, Users } from "lucide-react"
 const values = [
   {
     icon: Target,
-    title: "Mission-Driven",
+    title: "One Clear Mission",
     description:
-      "We&apos;re dedicated to making entrepreneurship accessible for young people in our community.",
+      "Give young founders in KV a professional online presence — no cost, no strings.",
   },
   {
     icon: Heart,
-    title: "Community First",
+    title: "Built for This Community",
     description:
-      "Everything we do is rooted in supporting and strengthening the Kennebecasis Valley.",
+      "We live here. We know the valley. Everything we do is for Quispamsis and Rothesay.",
   },
   {
     icon: Users,
-    title: "Collaborative",
+    title: "By Young People, For Young People",
     description:
-      "We believe in the power of connection and work to bring entrepreneurs together.",
+      "We get it because we've been there. Starting something is hard enough without worrying about a website.",
   },
 ]
 
@@ -42,10 +42,10 @@ export function About() {
                 you the ropes.
               </p>
               <p>
-                That&apos;s what we do. We help young people in Quispamsis and
-                Rothesay turn their ideas into real businesses. Free planning
-                help, introductions to people who&apos;ve done it before, and a
-                community that actually gets it.
+                We build free websites for young entrepreneurs in Quispamsis and
+                Rothesay. That&apos;s our thing. We also put together a bunch of
+                free resources — templates, courses, tools, funding links — so
+                you can figure out the rest on your own terms.
               </p>
               <p className="font-medium text-foreground">
                 You don&apos;t need to have it all figured out. You just need to

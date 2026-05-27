@@ -1,40 +1,61 @@
-import Link from "next/link"
-import { ArrowRight, Download, ExternalLink, FileText, Video, Bookmark } from "lucide-react"
+import { ExternalLink, FileText, GraduationCap, DollarSign, Wrench, Scale } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 
-const resources = [
+const resourceCategories = [
   {
     icon: FileText,
-    title: "Business Plan Template",
-    description: "A comprehensive template to help you structure your business idea.",
-    type: "Download",
-    typeIcon: Download,
-    link: "#",
+    title: "Business Plan Templates",
+    description: "Free templates to help you think through your idea.",
+    links: [
+      { name: "One-Page Business Plan (Google Doc)", url: "https://docs.google.com/document/d/1PbFAGJmMDl0Mzl1xGRXMfEzpNfMhLfYnHbsQiYoEmQ/template/preview" },
+      { name: "Canva Business Plan Templates", url: "https://www.canva.com/templates/s/business-plan/" },
+      { name: "LivePlan Free Sample Plans", url: "https://www.liveplan.com/sample-business-plans" },
+    ],
   },
   {
-    icon: Video,
-    title: "Getting Started Guide",
-    description: "Video series covering the basics of starting a business in NB.",
-    type: "Video",
-    typeIcon: ExternalLink,
-    link: "#",
+    icon: DollarSign,
+    title: "Funding & Grants",
+    description: "Money available for young entrepreneurs in New Brunswick.",
+    links: [
+      { name: "SEED (Student Entrepreneur Program)", url: "https://www2.gnb.ca/content/gnb/en/services/services_renderer.10849.SEED_-_Self-Employment_Benefit.html" },
+      { name: "Futurpreneur Canada", url: "https://www.futurpreneur.ca/" },
+      { name: "CBDC Fundy (Loans & Support)", url: "https://www.cbdc.ca/en/cbdc-westmorland-albert" },
+      { name: "NB Student Venture Capital", url: "https://www2.gnb.ca/content/gnb/en/departments/petl/people/content/EmploymentDevelopment/StudentVentureCapital.html" },
+    ],
   },
   {
-    icon: Bookmark,
-    title: "Funding Resources",
-    description: "List of grants, loans, and funding opportunities for young entrepreneurs.",
-    type: "Guide",
-    typeIcon: ExternalLink,
-    link: "#",
+    icon: GraduationCap,
+    title: "Free Courses",
+    description: "Learn marketing, finance, and business basics for free.",
+    links: [
+      { name: "Google Digital Garage", url: "https://learndigital.withgoogle.com/digitalgarage" },
+      { name: "HubSpot Academy (Marketing)", url: "https://academy.hubspot.com/" },
+      { name: "Coursera - How to Start a Startup", url: "https://www.coursera.org/learn/startup" },
+      { name: "Khan Academy - Entrepreneurship", url: "https://www.khanacademy.org/college-careers-more/entrepreneurship2" },
+    ],
   },
-]
-
-const externalLinks = [
-  { name: "Town of Quispamsis", url: "#" },
-  { name: "Town of Rothesay", url: "#" },
-  { name: "NB Business Support", url: "#" },
-  { name: "CBDC Fundy", url: "#" },
+  {
+    icon: Wrench,
+    title: "Free Tools",
+    description: "Run your business without spending a dime on software.",
+    links: [
+      { name: "Canva (Design & Social Media)", url: "https://www.canva.com/" },
+      { name: "Wave (Free Invoicing & Accounting)", url: "https://www.waveapps.com/" },
+      { name: "Square (Free POS & Payments)", url: "https://squareup.com/ca" },
+      { name: "Notion (Organize Everything)", url: "https://www.notion.so/" },
+      { name: "Calendly (Free Scheduling)", url: "https://calendly.com/" },
+    ],
+  },
+  {
+    icon: Scale,
+    title: "Legal & Registration",
+    description: "How to make it official in New Brunswick.",
+    links: [
+      { name: "Register a Business in NB", url: "https://www2.gnb.ca/content/gnb/en/services/services_renderer.14702.Register_a_Business_Name.html" },
+      { name: "Do I Need to Charge HST?", url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/register-gst-hst.html" },
+      { name: "Free Business Name Search (NB)", url: "https://www.pxw1.snb.ca/snb7001/e/2000/2500e.asp" },
+    ],
+  },
 ]
 
 export function Resources() {
@@ -44,70 +65,44 @@ export function Resources() {
         {/* Section Header */}
         <div className="mx-auto mb-12 max-w-2xl text-center md:mb-16">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Resources & Tools
+            Free Resources
           </h2>
           <p className="text-lg text-muted-foreground">
-            Free downloadable resources, guides, and links to help you start and
-            grow your business in the Kennebecasis Valley.
+            Everything you need to start and run a business — curated links,
+            templates, and tools. All free, no sign-up required.
           </p>
         </div>
 
-        {/* Resource Cards */}
-        <div className="mb-16 grid gap-6 md:grid-cols-3">
-          {resources.map((resource) => (
-            <Card
-              key={resource.title}
-              className="group transition-all hover:shadow-lg"
-            >
+        {/* Resource Categories */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {resourceCategories.map((category) => (
+            <Card key={category.title} className="flex flex-col">
               <CardHeader>
                 <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
-                  <resource.icon className="h-6 w-6" />
+                  <category.icon className="h-6 w-6" />
                 </div>
-                <CardTitle className="text-lg">{resource.title}</CardTitle>
-                <CardDescription>{resource.description}</CardDescription>
+                <CardTitle className="text-lg">{category.title}</CardTitle>
+                <CardDescription>{category.description}</CardDescription>
               </CardHeader>
-              <CardContent>
-                <Link
-                  href={resource.link}
-                  className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
-                >
-                  <resource.typeIcon className="h-4 w-4" />
-                  {resource.type}
-                </Link>
+              <CardContent className="flex-1">
+                <ul className="space-y-2">
+                  {category.links.map((link) => (
+                    <li key={link.name}>
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
+                      >
+                        <ExternalLink className="h-3 w-3 shrink-0" />
+                        {link.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* External Links */}
-        <div className="mx-auto max-w-2xl rounded-2xl border border-border bg-muted/30 p-8">
-          <h3 className="mb-6 text-center text-lg font-semibold text-foreground">
-            Helpful External Links
-          </h3>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {externalLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.url}
-                className="flex items-center justify-between rounded-lg border border-border bg-background p-4 transition-all hover:border-primary hover:shadow-sm"
-              >
-                <span className="text-sm font-medium text-foreground">
-                  {link.name}
-                </span>
-                <ExternalLink className="h-4 w-4 text-muted-foreground" />
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-12 text-center">
-          <Button size="lg" asChild>
-            <Link href="#">
-              Browse All Resources
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
         </div>
       </div>
     </section>

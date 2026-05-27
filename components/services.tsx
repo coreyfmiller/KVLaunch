@@ -1,55 +1,42 @@
-import {
-  Lightbulb,
-  Users,
-  BookOpen,
-  FileText,
-  Calendar,
-  Handshake,
-} from "lucide-react"
+import { Globe, Palette, Smartphone, Zap, Search, Shield } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-const services = [
+const features = [
   {
-    icon: Lightbulb,
-    title: "Business Planning",
+    icon: Palette,
+    title: "Custom Design",
     description:
-      "Get guidance on creating a solid business plan, from market research to financial projections.",
-    free: true,
+      "Not a template. We design your site to match your brand, your vibe, and your audience.",
   },
   {
-    icon: Users,
-    title: "Mentorship Program",
+    icon: Smartphone,
+    title: "Mobile-Friendly",
     description:
-      "Connect with experienced local entrepreneurs who can guide you through your business journey.",
-    free: true,
+      "Looks great on phones, tablets, and desktops. Your customers are on mobile — your site should be too.",
   },
   {
-    icon: BookOpen,
-    title: "Workshops & Training",
+    icon: Zap,
+    title: "Fast & Modern",
     description:
-      "Free workshops on marketing, finance, legal basics, and other essential business skills.",
-    free: true,
+      "Built with modern tech that loads fast and works smoothly. No clunky WordPress sites here.",
   },
   {
-    icon: FileText,
-    title: "Business Templates",
+    icon: Search,
+    title: "SEO Ready",
     description:
-      "Access ready-to-use templates for business plans, invoices, contracts, and more.",
-    free: true,
+      "Set up so people can actually find you on Google. We handle the technical stuff.",
   },
   {
-    icon: Calendar,
-    title: "Networking Events",
+    icon: Globe,
+    title: "Your Own Domain",
     description:
-      "Regular meetups and events to connect with other entrepreneurs and local business owners.",
-    free: true,
+      "We'll help you get a real domain name — yourbusiness.com, not some free subdomain.",
   },
   {
-    icon: Handshake,
-    title: "Partner Connections",
+    icon: Shield,
+    title: "You Own It",
     description:
-      "Introductions to local service providers, suppliers, and potential business partners.",
-    free: true,
+      "It's your website. You get full access and ownership. No strings attached.",
   },
 ]
 
@@ -60,35 +47,30 @@ export function Services() {
         {/* Section Header */}
         <div className="mx-auto mb-12 max-w-2xl text-center md:mb-16">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Free Services for Young Entrepreneurs
+            What You Get
           </h2>
           <p className="text-lg text-muted-foreground">
-            We believe in supporting the next generation. All our core services
-            are completely free for young entrepreneurs in the KV area.
+            A professional website built for your business — completely free.
+            Here&apos;s what&apos;s included.
           </p>
         </div>
 
-        {/* Services Grid */}
+        {/* Features Grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
+          {features.map((feature) => (
             <Card
-              key={service.title}
+              key={feature.title}
               className="group relative overflow-hidden transition-all hover:shadow-lg"
             >
-              {service.free && (
-                <div className="absolute right-4 top-4 rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
-                  Free
-                </div>
-              )}
               <CardHeader>
                 <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                  <service.icon className="h-6 w-6" />
+                  <feature.icon className="h-6 w-6" />
                 </div>
-                <CardTitle className="text-xl">{service.title}</CardTitle>
+                <CardTitle className="text-xl">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base">
-                  {service.description}
+                  {feature.description}
                 </CardDescription>
               </CardContent>
             </Card>

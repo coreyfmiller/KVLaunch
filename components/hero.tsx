@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Rocket } from "lucide-react"
+import { ArrowRight, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Hero() {
@@ -15,37 +15,37 @@ export function Hero() {
         <div className="mx-auto max-w-3xl text-center">
           {/* Badge */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-background/80 px-4 py-2 text-sm backdrop-blur">
-            <Rocket className="h-4 w-4 text-accent" />
+            <Globe className="h-4 w-4 text-accent" />
             <span className="text-muted-foreground">
-              Empowering the next generation of entrepreneurs
+              Free websites for young founders in KV
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
-            Launch your business in{" "}
+            We build your website.{" "}
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Kennebecasis Valley
+              You build your business.
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="mb-8 text-pretty text-lg text-muted-foreground md:text-xl">
-            KV Launch connects young entrepreneurs in Quispamsis & Rothesay with
-            local business resources, free services, and a supportive community
-            to help you succeed.
+            KV Launch gives young entrepreneurs in Quispamsis & Rothesay a
+            professional website — completely free. Plus resources to help you
+            figure out the rest.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg" asChild>
-              <Link href="#services">
-                Explore Free Services
+              <Link href="#apply">
+                Apply for a Free Website
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="#directory">Browse Business Directory</Link>
+              <Link href="#how-it-works">See How It Works</Link>
             </Button>
           </div>
 
