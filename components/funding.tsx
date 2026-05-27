@@ -50,7 +50,7 @@ const fundingPrograms = [
       "Community Business Development Corporations provide loans and free business counselling. There are 10 CBDCs across NB — find your local one.",
     amount: "Up to $150K",
     eligibility: "Any NB entrepreneur",
-    url: "https://www.cbdc.ca/",
+    url: "https://cbdc.ca/locations/cbdc-charlotte-kings/",
     tags: ["Loan", "Counselling", "Local"],
   },
   {

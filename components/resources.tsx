@@ -19,7 +19,7 @@ const resourceCategories = [
     links: [
       { name: "SEED (Student Entrepreneur Program)", url: "https://www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour/Skills/content/FinancialSupport/SEED.html" },
       { name: "Futurpreneur Canada", url: "https://www.futurpreneur.ca/" },
-      { name: "CBDC (Loans & Support)", url: "https://www.cbdc.ca/" },
+      { name: "CBDC (Loans & Support)", url: "https://cbdc.ca/locations/cbdc-charlotte-kings/" },
     ],
   },
   {
