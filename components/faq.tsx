@@ -44,7 +44,7 @@ const faqs = [
   {
     question: "What if I need changes later?",
     answer:
-      "We'll show you how to make basic updates yourself. For bigger changes, just reach out and we'll help.",
+      "Just reach out to us and we'll take care of it. Whether it's updating text, adding a new page, or tweaking the design — we've got you covered.",
   },
   {
     question: "Can I start a business as a teenager?",
