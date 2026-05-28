@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Who is this for?",
     answer:
-      "Entrepreneurs aged 20 and under in the Quispamsis and Rothesay area who need a website for their business. Whether you're mowing lawns, selling candles, tutoring, or freelancing — if you're 20 or younger and building something, this is for you.",
+      "Entrepreneurs aged 19 and under in the Quispamsis and Rothesay area who need a website for their business. Whether you're mowing lawns, selling candles, tutoring, or freelancing — if you're 19 or younger and building something, this is for you.",
   },
   {
     question: "Is it really free? What's the catch?",
