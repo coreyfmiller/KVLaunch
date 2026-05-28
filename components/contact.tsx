@@ -145,6 +145,26 @@ export function Contact() {
               />
             </div>
 
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="parentConsent"
+                  required
+                  className="mt-1 h-4 w-4 rounded border-border"
+                />
+                <Label htmlFor="parentConsent" className="text-sm font-normal text-muted-foreground">
+                  I confirm that I am 19 or under. If I am under 16, a parent or
+                  guardian is aware of and consents to this application. I have
+                  read the{" "}
+                  <a href="/privacy" className="text-primary hover:underline">
+                    Privacy Policy
+                  </a>
+                  .
+                </Label>
+              </div>
+            </div>
+
             <Button type="submit" size="lg" className="w-full">
               Submit Application
               <Send className="ml-2 h-4 w-4" />

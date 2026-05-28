@@ -107,18 +107,32 @@ export function Footer() {
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} KV Launch. All rights reserved.
             </p>
-            <p className="text-sm text-muted-foreground">
-              A{" "}
-              <a
-                href="https://www.fundylogic.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-foreground hover:underline"
+            <div className="flex items-center gap-6">
+              <Link
+                href="/privacy"
+                className="text-sm text-muted-foreground hover:text-foreground"
               >
-                FundyLogic
-              </a>
-              {" "}project
-            </p>
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className="text-sm text-muted-foreground hover:text-foreground"
+              >
+                Terms of Service
+              </Link>
+              <p className="text-sm text-muted-foreground">
+                A{" "}
+                <a
+                  href="https://www.fundylogic.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-foreground hover:underline"
+                >
+                  FundyLogic
+                </a>
+                {" "}project
+              </p>
+            </div>
           </div>
         </div>
       </div>
