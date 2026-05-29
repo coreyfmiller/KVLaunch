@@ -52,37 +52,38 @@ export function Portfolio() {
               key={project.name}
               className="group overflow-hidden transition-all hover:shadow-lg"
             >
-              <div className="relative aspect-[4/3] w-full overflow-hidden">
+              <Link
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block aspect-[4/3] w-full overflow-hidden"
+              >
                 <Image
                   src={project.image}
                   alt={`${project.name} website screenshot`}
                   fill
                   className="object-cover object-top transition-transform group-hover:scale-105"
                 />
-              </div>
+              </Link>
               <CardContent className="p-6">
-                <div className="flex items-start justify-between">
-                  <div>
-                    <h3 className="font-semibold text-foreground">
-                      {project.name}
-                    </h3>
-                    <p className="mb-2 text-xs font-medium text-primary">
-                      {project.category}
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      {project.description}
-                    </p>
-                  </div>
-                  <Link
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0 rounded-full p-2 transition-colors hover:bg-muted"
-                    aria-label={`Visit ${project.name} website`}
-                  >
-                    <ArrowUpRight className="h-4 w-4 text-muted-foreground" />
-                  </Link>
-                </div>
+                <h3 className="font-semibold text-foreground">
+                  {project.name}
+                </h3>
+                <p className="mb-2 text-xs font-medium text-primary">
+                  {project.category}
+                </p>
+                <p className="mb-4 text-sm text-muted-foreground">
+                  {project.description}
+                </p>
+                <Link
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                >
+                  Visit Site
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </Link>
               </CardContent>
             </Card>
           ))}
