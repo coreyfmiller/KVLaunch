@@ -14,9 +14,9 @@ export function Hero() {
       <div className="container relative mx-auto px-4 py-20 md:px-6 md:py-32">
         <div className="mx-auto max-w-3xl text-center">
           {/* Badge */}
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-background/80 px-4 py-2 text-sm font-semibold backdrop-blur">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-background/80 px-4 py-2 text-sm backdrop-blur">
             <Globe className="h-4 w-4 text-accent" />
-            <span className="text-foreground">
+            <span className="text-muted-foreground">
               Free websites for young founders in KV
             </span>
           </div>
