@@ -49,6 +49,11 @@ export function Hero() {
             </Button>
           </div>
 
+          {/* Capacity note */}
+          <p className="mt-4 text-sm text-muted-foreground">
+            We take on 2–3 new projects per month. Spots are limited.
+          </p>
+
           {/* Stats */}
           <div className="mt-16 grid grid-cols-3 gap-8 border-t border-border pt-8">
             <div>

@@ -18,11 +18,23 @@ export function Contact() {
   })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Wire up to email service or form backend (Formspree, Netlify Forms, etc.)
-    console.log("Application submitted:", formData)
-    setSubmitted(true)
+    
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        access_key: "977155ad-4d90-49c5-acbc-428748ce64d6",
+        subject: `New KV Launch Application: ${formData.businessName}`,
+        from_name: formData.name,
+        ...formData,
+      }),
+    })
+
+    if (response.ok) {
+      setSubmitted(true)
+    }
   }
 
   if (submitted) {
@@ -59,6 +71,13 @@ export function Contact() {
               you&apos;re just getting started, we want to hear from you.
               Open to entrepreneurs aged 19 and under in the KV area.
             </p>
+            <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
+              </span>
+              Currently accepting applications — 2–3 spots per month
+            </div>
           </div>
 
           {/* Application Form */}
