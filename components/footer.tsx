@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Mail, MapPin } from "lucide-react"
+import { MapPin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -91,12 +91,6 @@ export function Footer() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 shrink-0" />
                 <span>Quispamsis & Rothesay, NB</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Mail className="h-4 w-4 shrink-0" />
-                <a href="mailto:hello@kvlaunch.ca" className="hover:text-foreground">
-                  hello@kvlaunch.ca
-                </a>
               </div>
             </div>
           </div>

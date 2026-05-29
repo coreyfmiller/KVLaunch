@@ -94,14 +94,7 @@ export default function PrivacyPolicy() {
                   </h2>
                   <p>
                     You can ask us to delete your information at any time. Just
-                    email us at{" "}
-                    <a
-                      href="mailto:hello@kvlaunch.ca"
-                      className="text-primary hover:underline"
-                    >
-                      hello@kvlaunch.ca
-                    </a>{" "}
-                    and we&apos;ll take care of it.
+                    email us using the application form on our homepage and we&apos;ll take care of it.
                   </p>
                 </div>
 
@@ -122,15 +115,8 @@ export default function PrivacyPolicy() {
                     Questions?
                   </h2>
                   <p>
-                    If you have any questions about this policy, reach out to us
-                    at{" "}
-                    <a
-                      href="mailto:hello@kvlaunch.ca"
-                      className="text-primary hover:underline"
-                    >
-                      hello@kvlaunch.ca
-                    </a>
-                    .
+                    If you have any questions about this policy, reach out
+                    through the application form on our homepage.
                   </p>
                 </div>
               </div>

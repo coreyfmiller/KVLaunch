@@ -117,14 +117,7 @@ export default function Terms() {
                     Questions?
                   </h2>
                   <p>
-                    Reach out at{" "}
-                    <a
-                      href="mailto:hello@kvlaunch.ca"
-                      className="text-primary hover:underline"
-                    >
-                      hello@kvlaunch.ca
-                    </a>
-                    .
+                    Reach out through the application form on our homepage.
                   </p>
                 </div>
               </div>
