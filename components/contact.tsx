@@ -103,6 +103,18 @@ export function Contact() {
             </div>
           </div>
 
+          {/* For Parents callout */}
+          <div className="mb-8 rounded-xl border border-border bg-background p-6 text-center">
+            <p className="mb-1 font-medium text-foreground">
+              Parents & Guardians
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Have questions about the program? Want to apply on behalf of your
+              child? You&apos;re welcome here. This is a safe, free initiative —
+              no strings attached. Reach out anytime.
+            </p>
+          </div>
+
           {/* Form Type Toggle */}
           <div className="mb-8 flex justify-center">
             <div className="inline-flex rounded-lg border border-border bg-background p-1">
@@ -132,18 +144,6 @@ export function Contact() {
               </button>
             </div>
           </div>
-
-          {/* For Parents callout */}
-          {formType === "question" && (
-            <div className="mb-8 rounded-xl border border-border bg-background p-6 text-center">
-              <p className="text-sm text-muted-foreground">
-                <span className="font-medium text-foreground">Parents & guardians:</span>{" "}
-                We&apos;re happy to answer any questions about the program, how it
-                works, and what&apos;s involved. This is a safe, free initiative
-                — no strings attached. Ask us anything.
-              </p>
-            </div>
-          )}
 
           {/* Application Form */}
           {formType === "apply" && (
