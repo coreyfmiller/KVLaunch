@@ -176,10 +176,9 @@ export function Contact() {
                   I confirm that the applicant is 19 or under. If the applicant
                   is under 16, a parent or guardian is aware of and consents to
                   this application. I have read the{" "}
-                  <a href="/privacy" className="text-primary hover:underline">
+                  <a href="/privacy" className="inline text-primary hover:underline">
                     Privacy Policy
-                  </a>
-                  .
+                  </a>.
                 </Label>
               </div>
             </div>
