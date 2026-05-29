@@ -115,7 +115,7 @@ export function Footer() {
                 Terms of Service
               </Link>
               <p className="text-sm text-muted-foreground">
-                A{" "}
+                In partnership with{" "}
                 <a
                   href="https://www.fundylogic.com"
                   target="_blank"
@@ -124,7 +124,6 @@ export function Footer() {
                 >
                   FundyLogic
                 </a>
-                {" "}project
               </p>
             </div>
           </div>
