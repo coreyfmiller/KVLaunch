@@ -173,9 +173,9 @@ export function Contact() {
                   className="mt-1 h-4 w-4 rounded border-border"
                 />
                 <Label htmlFor="parentConsent" className="text-sm font-normal text-muted-foreground">
-                  I confirm that I am 19 or under. If I am under 16, a parent or
-                  guardian is aware of and consents to this application. I have
-                  read the{" "}
+                  I confirm that the applicant is 19 or under. If the applicant
+                  is under 16, a parent or guardian is aware of and consents to
+                  this application. I have read the{" "}
                   <a href="/privacy" className="text-primary hover:underline">
                     Privacy Policy
                   </a>
