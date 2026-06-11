@@ -18,7 +18,7 @@ export function Footer() {
             />
             <p className="text-sm text-muted-foreground">
               Free websites and resources for entrepreneurs aged 19 and under in
-              Quispamsis & Rothesay.
+              Quispamsis & Rothesay area.
             </p>
           </div>
 
@@ -90,7 +90,7 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 shrink-0" />
-                <span>Quispamsis & Rothesay, NB</span>
+                <span>Quispamsis & Rothesay area, NB</span>
               </div>
             </div>
           </div>

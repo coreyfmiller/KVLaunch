@@ -31,7 +31,7 @@ export function Hero() {
 
           {/* Subheadline */}
           <p className="mb-8 text-pretty text-lg text-muted-foreground md:text-xl">
-            KV Launch gives entrepreneurs aged 19 and under in Quispamsis & Rothesay a
+            KV Launch gives entrepreneurs aged 19 and under in the Quispamsis & Rothesay area a
             professional website — completely free. Plus resources to help you
             figure out the rest.
           </p>
@@ -66,7 +66,7 @@ export function Hero() {
             </div>
             <div>
               <p className="text-3xl font-bold text-foreground md:text-4xl">KV</p>
-              <p className="text-sm text-muted-foreground">Quispamsis & Rothesay</p>
+              <p className="text-sm text-muted-foreground">Quispamsis & Rothesay Area</p>
             </div>
           </div>
         </div>

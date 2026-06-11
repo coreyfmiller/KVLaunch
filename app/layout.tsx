@@ -15,17 +15,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://kvlaunch.ca'),
-  title: 'KV Launch | Free Websites for Young Entrepreneurs in Quispamsis & Rothesay',
+  title: 'KV Launch | Free Websites for Young Entrepreneurs in the Quispamsis & Rothesay Area',
   description: 'KV Launch builds free websites for entrepreneurs aged 19 and under in the Kennebecasis Valley. Plus free resources, funding guides, and tools to help you start your business.',
   openGraph: {
     title: 'KV Launch | Free Websites for Young Entrepreneurs',
-    description: 'We build free websites for entrepreneurs aged 19 and under in Quispamsis & Rothesay.',
+    description: 'We build free websites for entrepreneurs aged 19 and under in the Quispamsis & Rothesay area.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'KV Launch | Free Websites for Young Entrepreneurs',
-    description: 'We build free websites for entrepreneurs aged 19 and under in Quispamsis & Rothesay.',
+    description: 'We build free websites for entrepreneurs aged 19 and under in the Quispamsis & Rothesay area.',
   },
   icons: {
     icon: [
