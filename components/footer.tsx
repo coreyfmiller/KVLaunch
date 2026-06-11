@@ -114,17 +114,6 @@ export function Footer() {
               >
                 Terms of Service
               </Link>
-              <p className="text-sm text-muted-foreground">
-                In partnership with{" "}
-                <a
-                  href="https://www.fundylogic.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-foreground hover:underline"
-                >
-                  FundyLogic
-                </a>
-              </p>
             </div>
           </div>
         </div>

@@ -51,18 +51,6 @@ export function About() {
                 You don&apos;t need to have it all figured out. You just need to
                 start.
               </p>
-              <p className="text-sm">
-                KV Launch is built in partnership with{" "}
-                <a
-                  href="https://www.fundylogic.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-primary hover:underline"
-                >
-                  FundyLogic
-                </a>
-                , a local web development studio in the Kennebecasis Valley.
-              </p>
             </div>
           </div>
 
