@@ -24,7 +24,7 @@ export function Header() {
         <div className="flex flex-1 items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo.png"
+              src="/Logo.png"
               alt="KV Launch"
               width={560}
               height={160}

@@ -10,7 +10,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Image
-              src="/logo.png"
+              src="/Logo.png"
               alt="KV Launch"
               width={120}
               height={35}
