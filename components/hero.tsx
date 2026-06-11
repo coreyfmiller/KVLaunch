@@ -24,7 +24,7 @@ export function Hero() {
           {/* Headline */}
           <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
             We build your website.{" "}
-            <span className="bg-gradient-to-r from-[#0150d0] to-[#f90190] bg-clip-text text-transparent">
+            <span className="bg-[linear-gradient(to_right,#0150d0_0%,#01cef5_30%,#b810aa_65%,#f90190_100%)] bg-clip-text text-transparent">
               You build your business.
             </span>
           </h1>
